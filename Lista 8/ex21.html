@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex21</title>
+</head>
+<body>
+    <script>
+        //21 - Escreva um programa que leia as notas das duas avaliações normais e a nota da avaliação optativa. Calcular a média do semestre considerando que a prova optativa substitui a nota mais baixa entre as duas primeiras avaliações. Escrever a média e mensagens que indiquem se o aluno foi aprovado, reprovado ou está em exame, de acordo com as informações abaixo:
+        // APROVADO ---- média >= 6.0
+        // REPROVADO ---- média < 3.0
+        // EXAME ----   média >= 3.0 e <6
+
+        var n0 = parseFloat(prompt("Insira sua nota da avaliação optativa:"));
+        var n1 = parseFloat(prompt("Insira sua nota da primeira avaliação normal:"));
+        var n2 = parseFloat(prompt("Insira sua nota da segunda avaliação normal:"));
+        var media = 0;
+
+        if (n0>n1) {
+            media = (n0+n2)/2;
+            if (media >= 6) {
+                alert ("Média: " + media + " ALUNO APROVADO");
+            } else if (media < 3) {
+                alert ("Média: " + media + " ALUNO REPROVADO");
+            } else if (media >=3 && media < 6) {
+                alert ("Média: " + media + " ALUNO EM EXAME");
+            }
+        } else if (n0>n2) {
+            media = (n0+n1)/2;
+            if (media >= 6) {
+                alert ("Média: " + media + " ALUNO APROVADO");
+            } else if (media < 3) {
+                alert ("Média: " + media + " ALUNO REPROVADO");
+            } else if (media >=3 && media < 6) {
+                alert ("Média: " + media + " ALUNO EM EXAME");
+            }
+        } 
+        else {
+            media = (n1+n2)/2;
+            if (media >= 6) {
+                alert ("Média: " + media + " ALUNO APROVADO");
+            } else if (media < 3) {
+                alert ("Média: " + media + " ALUNO REPROVADO");
+            } else if (media >=3 && media < 6) {
+                alert ("Média: " + media + " ALUNO EM EXAME");
+            }
+        }
+
+    </script>
+</body>
+</html>

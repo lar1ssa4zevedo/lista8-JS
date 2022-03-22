@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex11</title>
+</head>
+<body>
+    <script>
+        //11 - Um motorista de táxi deseja calcular o rendimento de seu carro na praça. Sabendo-se que o preço do combustível é de R$ 2,90, escreva um programa para ler: a marcação do odômetro (Km) no início do dia, a marcação (Km) no final do dia, o número de litros de combustível gasto e o valor total (R$) recebido dos passageiros. Calcular e escrever: a média do consumo em Km/L e o lucro (líquido) do dia.
+
+        // comb = 2,90
+
+        var kmInicio = parseInt(prompt("Digite a marcação do odômetro (Km) no início do dia:"));
+        var kmFim = parseInt(prompt("Digite a marcação do odômetro (Km) no final do dia:"));
+        var litros = parseInt(prompt("Digite o valor de litros de combustível gastos:"));
+        var dinheiro = parseInt(prompt("Digite o valor recebido dos passageiros (R$):"));
+
+        document.write("A média do consumo diário foi: " + ((kmFim - kmInicio)/litros) + "Km/L");
+        document.write ("<br> E o lucro financeiro no dia foi de: R$ " + (dinheiro- (litros*2.90)));
+
+    </script>
+</body>
+</html>

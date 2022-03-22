@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex07</title>
+</head>
+<body>
+    <script>
+
+        //7. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)
+
+        var a = parseInt(prompt("Digite um número:"));
+        var b = parseInt(prompt("Digite outro número:"));
+        var c = parseInt(prompt("Digite mais um número:"));
+        var d = parseInt(prompt("Digite um último número:"));
+
+        document.write ("Primeiro número digitado: " + a);
+        document.write ("<br> Último número digitado: " + d);
+
+        if (a>b && a>c && a>d) {
+            document.write ("<br> O maior número digitado: " + a);
+        }
+        else if (b>a && b>c && b>d) {
+            document.write ("<br> O maior número digitado: " + b);
+        }
+        else if (c>a && c>b && c>d) {
+            document.write ("<br> O maior número digitado: " + c);
+        }
+        else if (d>a && d>b && d>c) {
+            document.write ("<br> O maior número digitado: " + d);
+        }
+
+    </script>
+</body>
+</html>

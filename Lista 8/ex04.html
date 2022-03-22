@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //4. Faça um programa que leia 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+        
+        var x = parseInt(prompt("Digite um número:"));
+        var y = parseInt(prompt("Digite outro número:"));
+        var z = parseInt(prompt("Digite um último número:"));
+        
+
+        if (x<y && x<z) {
+            document.write("A soma dos dois maiores é igual a: " + (y+z));
+        }
+        if (y<x && y<z) {
+            document.write("A soma dos dois maiores é igual a: " + (x+z));
+        }
+        if (z<x && z<y) {
+            document.write("A soma dos dois maiores é igual a: " + (x+y));
+        }
+    </script>
+</body>
+</html>

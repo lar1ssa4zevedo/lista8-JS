@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex19</title>
+</head>
+<body>
+    <script>
+        //19 - Escreva um programa para ler o número de gols marcados pelo Grêmio e o número de gols marcados pelo Inter em um GRENAL. Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
+
+        alert("Vamos descobrir o vencedor do GRENAL.")
+        var g = parseInt(prompt("Digite o número de gols do Grêmio:"));
+        var i = parseInt(prompt("Digite o número de gols do Internacional:"));
+
+        if (g > i){
+            alert("Grêmio foi o vencedor!");
+        }  
+        else if (i > g) {
+            alert("Internacional foi o vencedor!");
+        }
+        else if (g == i) {
+            alert("EMPATE!")
+        }
+    </script>
+</body>
+</html>

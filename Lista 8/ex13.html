@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex13</title>
+</head>
+<body>
+    <script>
+        //13 - Escreva um programa para ler as notas das 4 avaliações de um aluno no semestre, calcular e escrever a média semestral e a seguinte mensagem: PARABÉNS! Você foi aprovado! somente se o aluno foi aprovado (considere 6.0 a média mínima para aprovação e 4 notas informadas).
+
+        alert("Vamos calcular sua média do semestre!");
+        var a = parseFloat(prompt("Digite a primeira nota:"));
+        var b = parseFloat(prompt("Digite a segunda nota:"));
+        var c = parseFloat(prompt("Digite a terceira nota:"));
+        var d = parseFloat(prompt("Por fim, digite a quarta nota:"));
+        var media = (a+b+c+d)/4;
+
+        if ((a>10 || a<0) || (b>10 || b<0) || (c>10 || c<0) || (d>10 || d<0)) {
+                document.write("Digite apenas notas de 0 a 10, por favor!")
+        }
+        else if (media >= 6.0) {
+            document.write ("PARABÉNS! Você foi aprovado. <br> Sua média foi: " + media);
+        }
+    
+
+    </script>
+</body>
+</html>

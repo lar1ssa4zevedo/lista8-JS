@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex25</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação). O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. Observação: Considere que só serão lidos os valores 1, 2, 3 ou 4 para as operações
+
+        var x = parseInt(prompt("Digite um número:"));
+        var y = parseInt(prompt("Digite outro número:"));
+        var o = parseInt(prompt("Agora escolha a operação que gostaria de realizar entre os números: 1-Adição, 2-Subtração, 3-Divisão, 4-Multiplicação"))
+        var soma = x+y;
+        var sub = x-y;
+        var div = x/y;
+        var mult = x*y;
+        
+
+        if (o == 1) {
+            document.write("O valor da soma entre esses números é de: " + soma);
+        }
+        else if (o == 2) {
+            document.write("O valor da subtração entre esses números é de: " + sub);
+        }
+        else if (o == 3) {
+            document.write("O valor da divisão entre esses números é de: " + div);
+        }
+        else if (o == 4) {
+            document.write("O valor da multiplicação entre esses números é de: " + mult);
+        }
+    </script>
+</body>
+</html>

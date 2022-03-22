@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex05</title>
+</head>
+<body>
+    <script>
+
+        //5. Faça um programa que leia dois valores informados pelo usuário e exiba uma das três mensagens a seguir: ‘Números iguais’, caso os números sejam iguais ‘Primeiro é maior’, caso o primeiro seja maior que o segundo; ‘Segundo maior’, caso o segundo seja maior que o primeiro.
+        
+        var x = parseInt(prompt("Digite um número:"));
+        var y = parseInt(prompt("Digite outro número:"));
+
+        if (x == y) {
+            document.write ("Os números informados são iguais!");
+        }
+        else if (x > y) {
+            document.write ("O primeiro número é o maior!");
+        }
+        else if (y > x) {
+            document.write ("O segundo número é o maior!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex12</title>
+</head>
+<body>
+    <script>
+        //12 - A equipe Mercedes deseja calcular o número mínimo de litros que deverá colocar no tanque de seu carro para que ele possa percorrer um determinado número de voltas até o primeiro reabastecimento. Escreva um programa que leia o comprimento da pista (em metros), o número total de voltas a serem percorridas no grande prêmio, o número de reabastecimentos desejados e o consumo de combustível do carro (em Km/L). 
+        //O programa deve calcular e exibir o número mínimo de litros necessários para percorrer até o primeiro reabastecimento. 
+        //Observação: considere que a quantidade de voltas entre os reabastecimentos é o mesmo, mas não poderá ser maior ou igual a 2. 
+        //O usuário deve informar a quantidade de quilômetros total do circuito e a quantidade de litros que o carro pode possuir. 
+
+        var tamanho_pista = parseInt(prompt("Insira o tamanho da pista em metros:"));
+        var voltas = parseInt(prompt("Insira o número de voltas:"));
+        var reabastecimento = parseInt(prompt("Insira o número de paradas:"));
+        var consumo_carro = parseInt(prompt("Insira o consumo do carro:"));
+
+        var conversãoKm = (tamanho_pista * voltas)/1000;
+        var minimoLitros = (conversãoKm/reabastecimento)/consumo_carro;
+        var totalLitros = conversãoKm * consumo_carro;
+
+        document.write("O mínimo de litros necessários para a primeira parada é de: " + minimoLitros + "L.");
+        document.write("<br> O tamanho da pista é de: " + conversãoKm + "Km.");
+        document.write("<br> O total de litros é de: " + totalLitros + "L.");
+
+
+
+    </script>
+</body>
+</html>

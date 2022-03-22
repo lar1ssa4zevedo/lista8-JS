@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex15</title>
+</head>
+<body>
+    <script>
+        // 15 - Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+
+        alert("Quer descobrir se você vai poder tirar o Biroliro do poder esse ano?");
+        var x = parseInt(prompt("Digite o ano do seu nascimento:"));
+
+        if (x<=2006 && x>=2005) {
+            document.write ("Nessa idade, o voto não é obrigatório, mas você pode ir votar se quiser :) <br> (por favor, queira.)");
+        }
+        else if (x<2005) {
+            document.write("Nessa idade o voto já é obrigatório! <br> Você vai precisar exercer sua cidadania esse ano. <br> (seja consciente.)")
+        }
+        else if (x>2006) {
+            document.write ("Nessa idade, infelizmente você ainda não pode votar :( <br> Mas estude a política brasileira pra você fazer isso nas próximas eleições!")
+        }
+    </script>
+</body>
+</html>
